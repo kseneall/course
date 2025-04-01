@@ -7,7 +7,7 @@
     --primary-white: #FFFFFF;
 }
 
-/*h1,
+h1,
 h2,
 h3,
 h4,
@@ -17,7 +17,18 @@ ul {
     padding: 0;
 
 }
-*/
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
 .list {
     list-style: none;
 }
@@ -35,6 +46,10 @@ body {
 
 }
 
+.header-border {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .logo-part {
    
     color: var(--accent-clr);
@@ -50,15 +65,7 @@ body {
     color: var(--secondary-text-clr);
 }
 
-.logo-footer {
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--footer-text-clr);
-}
+
 
 .nav-item {
     font-family: 'Roboto';
@@ -90,17 +97,46 @@ body {
     color: var(--action-clr);
 }
 
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+
+.address-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
 .hero {
     background-color: var(--secondary-text-clr);
+    padding-top: 188px ;
+    padding-bottom: 188px;
 }
 
 .hero-title {
+    width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-white);
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -119,6 +155,8 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -134,7 +172,20 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-text-clr);
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+
+.section-benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.benef-items {
+    display: flex;
+    column-gap: 24px;
 }
 
 .benefits-title {
@@ -143,12 +194,40 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-clr);
+    margin-bottom: 8px;
 }
+
+.section-works {
+    padding-bottom: 120px;
+}
+
+.works-wrap {
+    display: flex;
+    gap: 24px;
+}
+
 
 
 .team-section {
     background-color: var(--footer-text-clr);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.team-wrap {
+    
+    display: flex;
+    gap: 24px;
+}
+
+.worker-wrap{
+    background-color: var(--primary-white);
+    text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 32px;
+}
+
 
 .name-title {
     font-weight: 500;
@@ -156,18 +235,48 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-clr);
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .footer {
     background-color: var(--secondary-text-clr);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .text-footer {
     color: var(--footer-text-clr);
+    width: 264px;
+    margin-right: auto;
+    margin-top: 16px;
 
 }
 
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-text-clr);
+    
+}
+
 /* ---PORTFOLIO PAGE--- */
+
+.portfolio-wrap {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-filter {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+}
 
 .button-filter {
     font-family: inherit;
@@ -179,6 +288,7 @@ body {
     background-color: var(--footer-text-clr);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    padding: 12px 24px 12px 24px;
 
 }
 
@@ -188,11 +298,30 @@ body {
     color: var(--primary-white);
 }
 
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.description {
+    border-left: 1px solid var(--footer-text-clr);
+    border-right: 1px solid var(--footer-text-clr);
+    border-bottom: 1px solid var(--footer-text-clr);
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
 .project-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--secondary-text-clr);
+    margin-bottom: 8px;
 }
 
 .project-type {
